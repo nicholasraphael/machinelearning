@@ -13,7 +13,9 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-
+h = theta' .* X; %hypothesis given by linear model theta transpose * X
+J = 1 / (2*m) .* sum((h - y).^2);
+  
 
 
 
